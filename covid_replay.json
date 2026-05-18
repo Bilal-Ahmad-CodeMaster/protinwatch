@@ -1,0 +1,58 @@
+{
+  "analysis_id": "covid1219",
+  "sequence_id": "P0DTC2",
+  "virus_name": "SARS-CoV-2 Spike Protein",
+  "threat_index": 88.5,
+  "kmer_score": 73.0,
+  "esm2_score": 95.6,
+  "structural_score": 82.0,
+  "closest_match": "SARS-CoV-2_Omicron_BA.5",
+  "timestamp": "2019-12-26 03:14 UTC",
+  "alert": {
+    "alert_id": "PW-2019-A8F3C2",
+    "status": "DISPATCHED",
+    "timestamp": "2019-12-26 03:14 UTC",
+    "threat_index": 88.5,
+    "virus_name": "Novel Coronavirus (SARS-CoV-2)",
+    "before_state": "No active biological crisis alerts. System monitoring.",
+    "after_state": "ACTIVE CRISIS — Alert PW-2019-A8F3C2 dispatched. Response initiated.",
+    "actions_taken": [
+      "WHO Surveillance Team notified — Ref #PW-2019-A8F3C2",
+      "Travel advisory flag raised for Wuhan, Hubei Province, China",
+      "Sequence P0DTC2 escalated to high-priority watchlist"
+    ],
+    "agent_trace": [
+      {
+        "step": 1,
+        "agent": "DetectionAgent",
+        "action": "Threat Index 88.5/100 — threshold exceeded. Novel coronavirus spike detected.",
+        "timestamp": "2019-12-26 03:14:01 UTC"
+      },
+      {
+        "step": 2,
+        "agent": "VerificationAgent",
+        "action": "AlphaFold structural confirmation: TM-score 0.82 vs SARS-CoV-1. High structural similarity to known pandemic pathogen.",
+        "timestamp": "2019-12-26 03:14:03 UTC"
+      },
+      {
+        "step": 3,
+        "agent": "ResponseAgent",
+        "action": "Alert PW-2019-A8F3C2 created. Priority: CRITICAL. Dispatching to WHO Global Outbreak Alert.",
+        "timestamp": "2019-12-26 03:14:04 UTC"
+      },
+      {
+        "step": 4,
+        "agent": "NotificationAgent",
+        "action": "WHO + CDC + ECDC notified. Travel advisory issued. Sequence added to high-priority watchlist.",
+        "timestamp": "2019-12-26 03:14:05 UTC"
+      }
+    ]
+  },
+  "gemini_brief": {
+    "english": "SITUATION REPORT — WHO PANDEMIC BIOSURVEILLANCE SYSTEM\nAlert ID: PW-2019-A8F3C2 | Classification: CRITICAL | Date: December 26, 2019\n\n1. SITUATION\nA novel betacoronavirus spike protein sequence has been detected in surveillance data from Wuhan, Hubei Province, China. The sequence exhibits high structural similarity to SARS-CoV-1 (2003) but with significant mutations in the receptor-binding domain suggesting enhanced ACE2 affinity.\n\n2. THREAT LEVEL: CRITICAL — Confidence 91%\nThreat Index: 88.5/100 | ESM-2 Danger Score: 95.6/100 | Structural Novelty: 73/100\n\n3. WHY DANGEROUS\nThe spike protein shows a novel furin cleavage site not present in known bat coronaviruses. The receptor-binding domain mutations (N501Y, E484K predicted) suggest enhanced human ACE2 binding. AlphaFold structural analysis confirms TM-score 0.82 vs SARS-CoV-1 — high enough for cross-reactive immunity but different enough to evade existing defenses.\n\n4. SIMILAR OUTBREAKS\nMost similar to SARS-CoV-1 (2003): 8,098 cases, 774 deaths, 26 countries affected.\nAlso similar to MERS-CoV (2012): ongoing zoonotic transmission risk.\n\n5. RECOMMENDED ACTIONS\n• IMMEDIATE: Notify WHO Global Outbreak Alert and Response Network\n• 24 HOURS: Deploy field investigation team to Wuhan\n• 48 HOURS: Issue travel health advisory for Hubei Province\n• 72 HOURS: Begin PCR diagnostic protocol development\n• ONGOING: Monitor for human-to-human transmission evidence\n\nNOTE: WHO declared Public Health Emergency of International Concern on January 30, 2020 — 35 days after this detection.",
+    "urdu": "صورتحال رپورٹ — ڈبلیو ایچ او وبائی نگرانی نظام\nالرٹ آئی ڈی: PW-2019-A8F3C2 | درجہ بندی: انتہائی خطرناک | تاریخ: 26 دسمبر 2019\n\n1. صورتحال\nچین کے صوبہ ہوبئی کے شہر ووہان سے نگرانی کے ڈیٹا میں ایک نئے بیٹاکوروناوائرس اسپائیک پروٹین کی ترتیب دریافت ہوئی ہے۔\n\n2. خطرے کی سطح: انتہائی اہم — اعتماد 91٪\nخطرے کا انڈیکس: 88.5/100\n\n3. کیوں خطرناک ہے\nاسپائیک پروٹین میں ایک نیا فیورن کلیویج سائٹ موجود ہے جو معلوم چمگادڑ کوروناوائرس میں نہیں پایا جاتا۔\n\n4. فوری اقدامات\n• فوری: ڈبلیو ایچ او کو مطلع کریں\n• 24 گھنٹے: ووہان میں فیلڈ تحقیقاتی ٹیم تعینات کریں\n• 48 گھنٹے: ہوبئی صوبے کے لیے سفری صحت مشورہ جاری کریں"
+  },
+  "who_alert_date": "2020-01-30",
+  "detection_date": "2019-12-26",
+  "days_early": 35
+}
