@@ -1,0 +1,14 @@
+# Ignore local AI model weights and binaries
+model/
+tmp/
+
+# Ignore local databases
+data/chromadb/
+
+
+# Ignore environment variable secrets
+.env
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
