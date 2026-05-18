@@ -42,7 +42,7 @@ import platform
 from transformers import EsmTokenizer, EsmForSequenceClassification
 
 # Live cloud deployment aur local dono ke liye Hugging Face repository ID
-MODEL_REPO = "bilalahmadcodemaster/ProtinWatch"
+MODEL_REPO = "arifhusnain/ProteinWatch"
 
 print(f"🔄 Loading ESM-2 Model from Hugging Face: {MODEL_REPO}...")
 
