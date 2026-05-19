@@ -5,7 +5,7 @@ tmp/
 # Ignore local databases
 data/chromadb/
 
-
+/.history
 # Ignore environment variable secrets
 .env
 
